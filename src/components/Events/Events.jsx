@@ -25,20 +25,28 @@ const Events = () => {
         }}
       >
         <Row>
-          <Event date="1.11." title={t("lks")} />
-          <Event date="2.11." title={t("elonkorjuu")} />
+          <Event date="1.11." title={t("lks")} text={t("lks-info")} />
+          <Event
+            date="2.11."
+            title={t("elonkorjuu")}
+            text={t("elonkorjuu-info")}
+          />
         </Row>
         <Row>
-          <Event date="3.11." title={t("igs")} />
-          <Event date="4.11." title={t("fjs")} />
+          <Event date="3.11." title={t("igs")} text={t("igs-info")} />
+          <Event date="4.11." title={t("fjs")} text={t("fjs-info")} />
         </Row>
         <Row>
-          <Event date="4.11." title={t("pll")} />
-          <Event date="5.11." title={t("polin-appro")} />
+          <Event date="4.11." title={t("pll")} text={t("pll-info")} />
+          <Event
+            date="5.11."
+            title={t("polin-appro")}
+            text={t("polin-appro-info")}
+          />
         </Row>
         <Row>
-          <Event date="8.11." title={t("tpj")} />
-          <Event date="9.11." title={t("sillis")} />
+          <Event date="8.11." title={t("tpj")} text={t("tpj-info")} />
+          <Event date="9.11." title={t("sillis")} text={t("sillis-info")} />
         </Row>
       </Column>
     </>

@@ -1,4 +1,6 @@
+import EventModal from "../EventModal/EventModal"
 import styled from "@emotion/styled"
+import { useState } from "react"
 
 const StyledEvent = styled.div`
   border: solid transparent;
@@ -16,13 +18,21 @@ const StyledEvent = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 `
 
-const Event = ({ date, title }) => {
+const Label = styled.h3`
+  padding: 0 20px;
+`
+
+const Event = ({ date, title, text }) => {
+  const [open, setOpen] = useState(false)
+
   return (
-    <StyledEvent>
-      <h3>{date}</h3>
-      <h3>{title}</h3>
+    <StyledEvent onClick={() => setOpen(!open)}>
+      <Label>{date}</Label>
+      <Label>{title}</Label>
+      <EventModal isOpen={open} title={title} text={text} />
     </StyledEvent>
   )
 }
