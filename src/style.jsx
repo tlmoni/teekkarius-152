@@ -79,6 +79,7 @@ const style = css`
   }
 
   h3 {
+    font-family: Poppins;
     font-size: 30pt;
     margin: 10px 0px;
   }
