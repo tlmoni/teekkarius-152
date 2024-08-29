@@ -1,3 +1,4 @@
+import EventDetails from "@/components/EventDetails/EventDetails"
 import styled from "@emotion/styled"
 import i18n from "@/i18n"
 
@@ -128,13 +129,22 @@ const InfoText = styled.p`
   color: #002626;
 `
 
-const EventModal = ({ isOpen, title, text, handleClose }) => {
+const EventModal = ({
+  isOpen,
+  handleClose,
+  title,
+  text,
+  date,
+  time,
+  location
+}) => {
   return (
     <Background isOpen={isOpen}>
       <Modal isOpen={isOpen}>
         <Title>
           <Close onClick={handleClose}>&times;</Close>
           <EventTitle>{title}</EventTitle>
+          <EventDetails date={date} time={time} location={location} />
         </Title>
         <Info>
           <InfoText>{i18n.t("lorem")}</InfoText>

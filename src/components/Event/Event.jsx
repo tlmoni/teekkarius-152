@@ -36,7 +36,7 @@ const StyledEvent = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    width: 45vw;
+    width: 40vw;
     height: 180px;
     border-image-width: 50px;
     margin: 30px auto;
@@ -66,7 +66,7 @@ const Label = styled.h3`
   padding: 0 20px;
 `
 
-const Event = ({ date, title, text }) => {
+const Event = ({ title, text, date, time, location }) => {
   const [show, setShow] = useState(false)
 
   const openModal = () => (show ? () => {} : setShow(true))
@@ -79,9 +79,12 @@ const Event = ({ date, title, text }) => {
       {show && (
         <EventModal
           isOpen={show}
+          handleClose={closeModal}
           title={title}
           text={text}
-          handleClose={closeModal}
+          date={date}
+          time={time}
+          location={location}
         />
       )}
     </StyledEvent>

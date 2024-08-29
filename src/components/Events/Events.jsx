@@ -1,14 +1,3 @@
-/* import {
-  Email,
-  Info,
-  Instagram,
-  LocalActivity,
-  Lyrics,
-  Telegram
-} from "@mui/icons-material"
-import EventInfo from "@/components/EventInfo/EventInfo"
-import Button from "@/components/Button/Button" */
-//import Links from "@/components/Links/Links"
 import Column from "@/components/Column/Column"
 import { useTranslation } from "react-i18next"
 import Event from "@/components/Event/Event"
@@ -25,28 +14,68 @@ const Events = () => {
         }}
       >
         <Row>
-          <Event date="1.11." title={t("lks")} text={t("lks-info")} />
           <Event
-            date="2.11."
+            title={t("lks")}
+            text={t("lks-info")}
+            date="1.11."
+            time="HH:MM"
+            location="TBA"
+          />
+          <Event
             title={t("elonkorjuu")}
             text={t("elonkorjuu-info")}
+            date="2.11."
+            time="HH:MM"
+            location="TBA"
           />
         </Row>
         <Row>
-          <Event date="3.11." title={t("igs")} text={t("igs-info")} />
-          <Event date="4.11." title={t("fjs")} text={t("fjs-info")} />
+          <Event
+            title={t("igs")}
+            text={t("igs-info")}
+            date="3.11."
+            time="HH:MM"
+            location="TBA"
+          />
+          <Event
+            title={t("fjs")}
+            text={t("fjs-info")}
+            date="4.11."
+            time="HH:MM"
+            location="TBA"
+          />
         </Row>
         <Row>
-          <Event date="4.11." title={t("pll")} text={t("pll-info")} />
           <Event
-            date="5.11."
+            title={t("pll")}
+            text={t("pll-info")}
+            date="4.11."
+            time="HH:MM"
+            location="TBA"
+          />
+          <Event
             title={t("polin-appro")}
             text={t("polin-appro-info")}
+            date="5.11."
+            time="HH:MM"
+            location="TBA"
           />
         </Row>
         <Row>
-          <Event date="8.11." title={t("tpj")} text={t("tpj-info")} />
-          <Event date="9.11." title={t("sillis")} text={t("sillis-info")} />
+          <Event
+            title={t("tpj")}
+            text={t("tpj-info")}
+            date="8.11."
+            time="HH:MM"
+            location="TBA"
+          />
+          <Event
+            title={t("sillis")}
+            text={t("sillis-info")}
+            date="9.11."
+            time="HH:MM"
+            location="TBA"
+          />
         </Row>
       </Column>
     </>
