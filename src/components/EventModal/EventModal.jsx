@@ -5,30 +5,77 @@ const Background = styled.div`
   display: block;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 5vh;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #00000066;
   cursor: default;
+
+  animation: ${(props) => (props.isOpen ? "fadeIn" : "fadeOut")} 0.3s
+    cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
+  @keyframes fadeIn {
+    0% {
+      background: #00000000;
+    }
+    100% {
+      background: #00000066;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      background: #00000066;
+    }
+    100% {
+      background: #00000000;
+    }
+  }
 `
 
 const Modal = styled.div`
   display: flex;
   flex-direction: column;
   width: 60vw;
+  max-height: 90vh;
+  min-height: fit-content;
   z-index: 2;
   padding: 1.5em;
   background: #b9d8c2;
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
   overflow: hidden;
   border-radius: 10px;
   cursor: default;
+  opacity: 0;
+
+  animation: ${(props) => (props.isOpen ? "moveUp" : "moveDown")} 0.3s
+    cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+  }
 
   @media screen and (max-width: 1800px) {
     width: 70vw;
@@ -39,7 +86,7 @@ const Modal = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    width: 90vw;
+    width: 85vw;
   }
 `
 
@@ -53,18 +100,9 @@ const Title = styled.div`
 
 const EventTitle = styled.h3`
   color: #002626;
-  font-family: Libre Baskerville;
+  font-family: "LibreBaskerville";
   margin: 0;
   padding: 0;
-`
-
-const Info = styled.div`
-  height: 100%;
-  overflow: scroll;
-`
-
-const InfoText = styled.p`
-  color: #002626;
 `
 
 const Close = styled.span`
@@ -81,12 +119,21 @@ const Close = styled.span`
   }
 `
 
-const EventModal = ({ isOpen, title, text }) => {
-  return isOpen ? (
-    <Background>
-      <Modal>
+const Info = styled.div`
+  height: 100%;
+  overflow: scroll;
+`
+
+const InfoText = styled.p`
+  color: #002626;
+`
+
+const EventModal = ({ isOpen, title, text, handleClose }) => {
+  return (
+    <Background isOpen={isOpen}>
+      <Modal isOpen={isOpen}>
         <Title>
-          <Close>&times;</Close>
+          <Close onClick={handleClose}>&times;</Close>
           <EventTitle>{title}</EventTitle>
         </Title>
         <Info>
@@ -94,8 +141,6 @@ const EventModal = ({ isOpen, title, text }) => {
         </Info>
       </Modal>
     </Background>
-  ) : (
-    <></>
   )
 }
 

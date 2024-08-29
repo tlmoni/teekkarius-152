@@ -17,6 +17,15 @@ const Dropdown = styled.div`
     display: flex;
     cursor: pointer;
   }
+
+  & svg {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    transform: rotate(180deg);
+  }
 `
 
 const DropdownContent = styled.div`
@@ -32,8 +41,6 @@ const Chevron = styled(ExpandMore)`
   color: #b9d8c2;
   float: right;
   max-width: 20px;
-
-  transform: rotate(180);
 
   @media screen and (max-width: 900px) {
     max-width: 16px;

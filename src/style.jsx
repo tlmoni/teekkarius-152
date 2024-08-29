@@ -1,7 +1,13 @@
 import { Global, css } from "@emotion/react"
 
 const style = css`
-  @import "fonts/fonts.css";
+  * {
+    scrollbar-width: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   html,
   body {
@@ -9,10 +15,6 @@ const style = css`
     height: 100%;
     overflow: hidden;
     background: #002626;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
   }
 
   p {
@@ -59,7 +61,7 @@ const style = css`
   h2,
   h3,
   h4 {
-    font-family: Libre Baskerville;
+    font-family: "LibreBaskerville";
     font-weight: normal;
     color: #b9d8c2;
   }
@@ -80,7 +82,7 @@ const style = css`
 
   h3 {
     font-family: Poppins;
-    font-size: 30pt;
+    font-size: 28pt;
     margin: 10px 0px;
   }
 
@@ -92,6 +94,9 @@ const style = css`
     h2 {
       font-size: 40pt;
       line-height: 40pt;
+    }
+    h3 {
+      font-size: 26pt;
     }
   }
 
@@ -107,25 +112,30 @@ const style = css`
       line-height: 32pt;
       padding: 20px 0px;
     }
-  }
-
-  @media screen and (max-width: 780px) {
-    h1 {
-      font-size: 30pt;
-      line-height: 30pt;
-      padding: 20px 0px;
+    h3 {
+      font-size: 22pt;
+      word-wrap: break-word;
     }
   }
 
   @media screen and (max-width: 600px) {
     h1 {
-      font-size: 24pt;
+      font-size: 30pt;
       line-height: 24pt;
       margin-top: 10px;
     }
     h2 {
-      font-size: 22pt;
+      font-size: 24pt;
       line-height: 22pt;
+    }
+    h3 {
+      font-size: 18pt;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    h3 {
+      font-size: 16pt;
     }
   }
 `

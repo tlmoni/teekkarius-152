@@ -21,7 +21,7 @@ const Events = () => {
     <>
       <Column
         style={{
-          marginBottom: "100px"
+          marginBottom: "5vh"
         }}
       >
         <Row>
