@@ -6,7 +6,7 @@ const StyledEvent = styled.div`
   border: solid transparent;
   border-image-source: url(images/frame.svg);
   border-image-width: 80px;
-  border-image-slice: 50;
+  border-image-slice: 60;
   border-image-outset: 10px;
   border-image-repeat: round;
   width: 400px;
