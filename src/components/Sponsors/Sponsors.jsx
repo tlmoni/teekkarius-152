@@ -4,10 +4,10 @@ import Row from "@/components/Row/Row"
 const Sponsors = () => {
   return (
     <Row>
-      <Sponsor src="src/assets/Unisport.svg" />
-      <Sponsor src="src/assets/AYY.svg" />
-      <Sponsor src="src/assets/TJ.svg" />
-      <Sponsor src="src/assets/TPTMK.svg" />
+      <Sponsor src="images/Unisport.svg" />
+      <Sponsor src="images/AYY.svg" />
+      <Sponsor src="images/TJ.svg" />
+      <Sponsor src="images/TPTMK.svg" />
     </Row>
   )
 }

@@ -67,7 +67,7 @@ const LanguageSelection = () => {
           }}
         >
           <Flag
-            src={`src/assets/${i18n.language}.svg`}
+            src={`images//${i18n.language}.svg`}
             style={{ display: "inline-block" }}
           />
           <Chevron style={{ display: "inline-block" }} />
@@ -79,7 +79,7 @@ const LanguageSelection = () => {
               return (
                 <Flag
                   key={language}
-                  src={`src/assets/${language}.svg`}
+                  src={`images//${language}.svg`}
                   onClick={() => changeLanguage(language)}
                 />
               )

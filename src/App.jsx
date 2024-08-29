@@ -17,7 +17,7 @@ const App = () => {
         <Content>
           <LanguageSelection />
 
-          <Title src={"src/assets/Teekkarius-152.svg"} alt="Teekkarius 152" />
+          <Title src={"images/Teekkarius-152.svg"} alt="Teekkarius 152" />
 
           <p
             style={{
