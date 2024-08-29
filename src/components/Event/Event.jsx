@@ -38,7 +38,7 @@ const StyledEvent = styled.div`
   @media screen and (max-width: 700px) {
     width: 40vw;
     height: 180px;
-    border-image-width: 50px;
+    border-image-width: 40px;
     margin: 30px auto;
   }
 

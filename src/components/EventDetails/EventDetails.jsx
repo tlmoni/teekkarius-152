@@ -23,7 +23,7 @@ const EventInfoBar = styled.div`
 
 const EventDetail = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: nowrap;
   padding: 5px;
 `
