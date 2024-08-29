@@ -41,7 +41,7 @@ const Modal = styled.div`
   display: flex;
   flex-direction: column;
   width: 60vw;
-  max-height: 90vh;
+  max-height: 85vh;
   min-height: fit-content;
   z-index: 2;
   padding: 1.5em;
