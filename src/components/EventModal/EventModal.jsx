@@ -6,7 +6,7 @@ const Background = styled.div`
   display: block;
   position: fixed;
   z-index: 1;
-  padding-top: 5vh;
+  padding-top: 4vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -97,6 +97,10 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
   margin: 20px;
+
+  @media screen and (max-width: 900px) {
+    margin: 10px;
+  }
 `
 
 const EventTitle = styled.h3`
@@ -110,13 +114,18 @@ const Close = styled.span`
   color: #002626;
   font-size: 28pt;
   line-height: 14pt;
-  margin-bottom: 1em;
+  margin-bottom: 32px;
 
   &:hover,
   &:focus {
     color: #5d7f74;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 22pt;
+    margin-bottom: 16px;
   }
 `
 
