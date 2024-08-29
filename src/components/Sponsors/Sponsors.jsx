@@ -3,7 +3,7 @@ import Row from "@/components/Row/Row"
 
 const Sponsors = () => {
   return (
-    <Row style={{ justifyContent: "space-around" }}>
+    <Row style={{ justifyContent: "space-around", marginBottom: "3vh" }}>
       <Sponsor src="images/Unisport.svg" />
       <Sponsor src="images/AYY.svg" />
       <Sponsor src="images/TJ.svg" />
