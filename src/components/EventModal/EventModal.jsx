@@ -50,6 +50,7 @@ const Modal = styled.div`
   margin-right: auto;
   overflow: hidden;
   border-radius: 10px;
+  transform: translateZ(0);
   cursor: default;
   opacity: 0;
 
