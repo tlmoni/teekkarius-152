@@ -12,13 +12,12 @@ const Sponsor = styled.img`
   }
 
   @media screen and (max-width: 900px) {
-    width: 35%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   @media screen and (max-width: 600px) {
-    width: 40%;
+    width: 35%;
   }
 `
 

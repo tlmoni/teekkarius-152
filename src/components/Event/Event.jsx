@@ -20,6 +20,13 @@ const StyledEvent = styled.div`
   text-align: center;
   cursor: pointer;
 
+  @media screen and (max-width: 2000px) {
+    width: 350px;
+    height: 250px;
+    border-image-width: 70px;
+    margin: 45px auto;
+  }
+
   @media screen and (max-width: 1200px) {
     width: 350px;
     height: 250px;

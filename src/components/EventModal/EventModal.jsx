@@ -44,7 +44,7 @@ const Modal = styled.div`
   max-height: 80vh;
   min-height: fit-content;
   z-index: 2;
-  padding: 1.5em;
+  padding: 3em;
   background: #b9d8c2;
   margin-left: auto;
   margin-right: auto;
@@ -80,11 +80,13 @@ const Modal = styled.div`
   }
 
   @media screen and (max-width: 1800px) {
+    padding: 2em;
     width: 70vw;
   }
 
   @media screen and (max-width: 900px) {
     width: 80vw;
+    padding: 1.5em;
   }
 
   @media screen and (max-width: 600px) {
@@ -97,10 +99,10 @@ const Title = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 0 20px 20px;
 
   @media screen and (max-width: 900px) {
-    margin: 10px;
+    margin: 0 10px 10px;
   }
 `
 
