@@ -66,15 +66,15 @@ const Events = () => {
             title={t("tpj")}
             text={t("tpj-info")}
             date="8.11."
-            time="HH:MM"
-            location="TBA"
+            time="18:30"
+            location="Kulttuurikasarmi Events"
           />
           <Event
             title={t("sillis")}
             text={t("sillis-info")}
             date="9.11."
-            time="HH:MM"
-            location="TBA"
+            time="12:00-18:00"
+            location="Servin mökki"
           />
         </Row>
       </Column>
