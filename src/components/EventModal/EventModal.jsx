@@ -1,6 +1,6 @@
 import EventDetails from "@/components/EventDetails/EventDetails"
+import Links from "@/components/Links/Links"
 import styled from "@emotion/styled"
-import i18n from "@/i18n"
 
 const Background = styled.div`
   display: block;
@@ -148,7 +148,8 @@ const EventModal = ({
   text,
   date,
   time,
-  location
+  location,
+  links
 }) => {
   return (
     <Background isOpen={isOpen}>
@@ -159,8 +160,9 @@ const EventModal = ({
           <EventDetails date={date} time={time} location={location} />
         </Title>
         <Info>
-          <InfoText>{i18n.t("lorem")}</InfoText>
+          <InfoText>{text}</InfoText>
         </Info>
+        <Links>{links}</Links>
       </Modal>
     </Background>
   )

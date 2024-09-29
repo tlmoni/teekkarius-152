@@ -1,6 +1,10 @@
 import { Global, css } from "@emotion/react"
 
 const style = css`
+  #root {
+    white-space: pre-line;
+  }
+
   * {
     scrollbar-width: none;
   }

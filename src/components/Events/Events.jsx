@@ -1,6 +1,15 @@
+import {
+  Email,
+  Info,
+  Instagram,
+  LocalActivity,
+  Lyrics,
+  Telegram
+} from "@mui/icons-material"
 import Column from "@/components/Column/Column"
 import { useTranslation } from "react-i18next"
 import Event from "@/components/Event/Event"
+import Link from "@/components/Link/Link"
 import Row from "@/components/Row/Row"
 
 const Events = () => {
@@ -41,8 +50,8 @@ const Events = () => {
             title={t("fjs")}
             text={t("fjs-info")}
             date="4.11."
-            time="HH:MM"
-            location="TBA"
+            time="17:00"
+            location="Servin mökki"
           />
         </Row>
         <Row>
@@ -68,6 +77,17 @@ const Events = () => {
             date="8.11."
             time="18:30"
             location="Kulttuurikasarmi Events"
+            links={[
+              <Link
+                key="tpj-kide"
+                href="https://kide.app/events/bb7f06ca-5380-4227-90f0-0815f7bb189e"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LocalActivity id="icon" />
+                <p>kide.app</p>
+              </Link>
+            ]}
           />
           <Event
             title={t("sillis")}

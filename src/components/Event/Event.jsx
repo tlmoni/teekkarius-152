@@ -20,6 +20,10 @@ const StyledEvent = styled.div`
   text-align: center;
   cursor: pointer;
 
+  &:hover {
+    background-color: #ffffff20;
+  }
+
   @media screen and (max-width: 2000px) {
     width: 350px;
     height: 250px;
@@ -73,7 +77,7 @@ const Label = styled.h3`
   padding: 0 20px;
 `
 
-const Event = ({ title, text, date, time, location }) => {
+const Event = ({ title, text, date, time, location, links }) => {
   const [show, setShow] = useState(false)
 
   const openModal = () => (show ? () => {} : setShow(true))
@@ -92,6 +96,7 @@ const Event = ({ title, text, date, time, location }) => {
           date={date}
           time={time}
           location={location}
+          links={links}
         />
       )}
     </StyledEvent>
