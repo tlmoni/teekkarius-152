@@ -42,7 +42,6 @@ const Modal = styled.div`
   flex-direction: column;
   width: 60vw;
   max-height: 80vh;
-  min-height: fit-content;
   z-index: 2;
   padding: 3em;
   background: #b9d8c2;
@@ -85,8 +84,8 @@ const Modal = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    width: 80vw;
     padding: 1.5em;
+    width: 80vw;
   }
 
   @media screen and (max-width: 600px) {

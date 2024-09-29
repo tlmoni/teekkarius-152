@@ -95,6 +95,17 @@ const Events = () => {
             date="9.11."
             time="12:00-18:00"
             location="Servin mökki"
+            links={[
+              <Link
+                key="sillis-kide"
+                href="https://kide.app/events/bb7f06ca-5380-4227-90f0-0815f7bb189e"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LocalActivity id="icon" />
+                <p>kide.app</p>
+              </Link>
+            ]}
           />
         </Row>
       </Column>
