@@ -113,6 +113,15 @@ const Events = () => {
             location="Kulttuurikasarmi Events"
             links={[
               <Link
+                key="tpj-info"
+                href="https://www.ayy.fi/fi/152-teekkariperinnejuhla"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Info id="icon" />
+                <p>ayy.fi</p>
+              </Link>,
+              <Link
                 key="tpj-kide"
                 href="https://kide.app/events/bb7f06ca-5380-4227-90f0-0815f7bb189e"
                 target="_blank"
@@ -130,6 +139,15 @@ const Events = () => {
             time="12:00-18:00"
             location="Servin mökki"
             links={[
+              <Link
+                key="sillis-info"
+                href="https://www.ayy.fi/fi/teekkarisillis-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Info id="icon" />
+                <p>ayy.fi</p>
+              </Link>,
               <Link
                 key="sillis-kide"
                 href="https://kide.app/events/bb7f06ca-5380-4227-90f0-0815f7bb189e"
