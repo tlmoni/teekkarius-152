@@ -27,15 +27,36 @@ const Events = () => {
             title={t("lks")}
             text={t("lks-info")}
             date="1.11."
-            time="HH:MM"
+            time="TBA"
             location="TBA"
           />
           <Event
             title={t("elonkorjuu")}
             text={t("elonkorjuu-info")}
             date="2.11."
-            time="HH:MM"
-            location="TBA"
+            time="17:30"
+            location="Servin mökki"
+            image="/images/Elonkorjuu.png"
+            links={[
+              <Link
+                key="elonkorjuu-info"
+                href="https://www.ayy.fi/fi/elonkorjuu-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Info id="icon" />
+                <p>ayy.fi</p>
+              </Link>,
+              <Link
+                key="elonkorjuu-kide"
+                href="https://kide.app/events/12a8809b-bc33-4884-b9e2-61fb69692693"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LocalActivity id="icon" />
+                <p>kide.app</p>
+              </Link>
+            ]}
           />
         </Row>
         <Row>
@@ -43,8 +64,8 @@ const Events = () => {
             title={t("igs")}
             text={t("igs-info")}
             date="3.11."
-            time="HH:MM"
-            location="TBA"
+            time="TBA"
+            location="Servin mökki"
           />
           <Event
             title={t("fjs")}
@@ -52,6 +73,7 @@ const Events = () => {
             date="4.11."
             time="17:00"
             location="Servin mökki"
+            image="/images/FJS.jpg"
           />
         </Row>
         <Row>
@@ -59,15 +81,27 @@ const Events = () => {
             title={t("pll")}
             text={t("pll-info")}
             date="4.11."
-            time="HH:MM"
-            location="TBA"
+            time="16:30"
+            location="Rantasauna"
           />
           <Event
             title={t("polin-appro")}
             text={t("polin-appro-info")}
             date="5.11."
-            time="HH:MM"
-            location="TBA"
+            time="16:00-02:00"
+            location="Apollo Night Club"
+            image="/images/Polin Appro.png"
+            links={[
+              <Link
+                key="polin-appro-kide"
+                href="https://kide.app/events/2198b369-31e0-4d00-9c01-d809225b5f56/details"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LocalActivity id="icon" />
+                <p>kide.app</p>
+              </Link>
+            ]}
           />
         </Row>
         <Row>

@@ -77,7 +77,7 @@ const Label = styled.h3`
   padding: 0 20px;
 `
 
-const Event = ({ title, text, date, time, location, links }) => {
+const Event = ({ title, text, date, time, location, image, links }) => {
   const [show, setShow] = useState(false)
 
   const openModal = () => (show ? () => {} : setShow(true))
@@ -96,6 +96,7 @@ const Event = ({ title, text, date, time, location, links }) => {
           date={date}
           time={time}
           location={location}
+          image={image}
           links={links}
         />
       )}

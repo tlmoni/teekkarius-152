@@ -136,6 +136,20 @@ const Info = styled.div`
   overflow: scroll;
 `
 
+const Image = styled.img`
+  width: 70%;
+  margin-bottom: 2em;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+`
+
 const InfoText = styled.p`
   color: #002626;
 `
@@ -148,6 +162,7 @@ const EventModal = ({
   date,
   time,
   location,
+  image,
   links
 }) => {
   return (
@@ -159,6 +174,7 @@ const EventModal = ({
           <EventDetails date={date} time={time} location={location} />
         </Title>
         <Info>
+          <Image src={image} />
           <InfoText>{text}</InfoText>
         </Info>
         <Links>{links}</Links>
