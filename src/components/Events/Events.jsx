@@ -1,11 +1,4 @@
-import {
-  Email,
-  Info,
-  Instagram,
-  LocalActivity,
-  Lyrics,
-  Telegram
-} from "@mui/icons-material"
+import { Info, LocalActivity } from "@mui/icons-material"
 import Column from "@/components/Column/Column"
 import { useTranslation } from "react-i18next"
 import Event from "@/components/Event/Event"
@@ -64,8 +57,9 @@ const Events = () => {
             title={t("igs")}
             text={t("igs-info")}
             date="3.11."
-            time="TBA"
+            time="18:30"
             location="Servin mökki"
+            image="/images/IGS.png"
           />
           <Event
             title={t("fjs")}
