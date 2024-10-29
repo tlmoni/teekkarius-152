@@ -1,4 +1,4 @@
-import { Info, LocalActivity } from "@mui/icons-material"
+import { Info, LocalActivity, Lyrics } from "@mui/icons-material"
 import Column from "@/components/Column/Column"
 import { useTranslation } from "react-i18next"
 import Event from "@/components/Event/Event"
@@ -20,8 +20,29 @@ const Events = () => {
             title={t("lks")}
             text={t("lks-info")}
             date="1.11."
-            time="TBA"
-            location="TBA"
+            time="18:00-01:00"
+            location="Otakaari 20"
+            image="/images/LKS.jpg"
+            links={[
+              <Link
+                key="lks-lyrics"
+                href="https://forms.gle/T4qsfQcKr7zSPGip6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Lyrics id="icon" />
+                <p>Forms</p>
+              </Link>,
+              <Link
+                key="lks-kide"
+                href="https://kide.app/events/0d66c4c8-fa37-4d16-bf8a-083cdec88352"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LocalActivity id="icon" />
+                <p>kide.app</p>
+              </Link>
+            ]}
           />
           <Event
             title={t("elonkorjuu")}
@@ -77,6 +98,7 @@ const Events = () => {
             date="4.11."
             time="16:30"
             location="Rantasauna"
+            image="/images/PLL.jpg"
           />
           <Event
             title={t("polin-appro")}
