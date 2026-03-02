@@ -1,6 +1,6 @@
 # Teekkarius 152
 
-![Image](src/assets/Teekkarius-152.svg)
+![Image](/public/images/Teekkarius-152.svg)
 
 https://teekkarius-152.vercel.app
 
